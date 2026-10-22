@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 12</title>
+    <style>
+      p{
+        display: inline-block;
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      .general{
+        border: solid 1px grey;
+        border-radius: 5px;
+        width: 300px;
+        height: 100px;
+        margin-bottom: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 4px 4px 4px rgba(0,0,0, .15), -4px -4px 4px rgba(0,0,0, .15);
+      }
+
+
+      .button{
+        border:none;
+        background-color: rgb(62, 105, 236);
+        color: white;
+        border-radius: 11px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* height: 25px;
+        width: 35px; */
+        display: inline-block;
+      }
+
+      .home,.notifications,.messages{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header{
+        background-color: rgb(114, 83, 172);
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 10px;
+        margin-bottom: 100px;
+      }
+
+      .left-section{
+        /* background-color: aquamarine; */
+        width: 50px;
+      }
+
+      .search-bar{
+        flex:1;
+        height: 35px;
+        max-width: 500px;
+        /* width: 450px; */
+        border: none;
+        border-radius: 18px;
+        margin-left: 60px;
+        margin-right: 60px;
+        padding-left: 20px;
+      }
+
+     
+      .home-tab{
+        color: white;
+      }
+
+
+      .download{
+        border: solid 1px white;
+        background-color: rgb(114, 83, 172);
+        color: white;
+        height: 35px;
+        width: 90px;
+        cursor: pointer;
+      }
+
+      .download:hover{
+        background-color: rgb(172, 137, 238);
+      }
+
+      .follow-box{
+        border: 1px solid rgb(182, 182, 182);
+        width: 310px;
+        border-radius: 6px;
+      }
+
+      .section{
+        display: flex;
+        width: 300px;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin-right: 20px;
+        margin-bottom: 7px;
+      }
+
+      .profile-pic{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 60px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+
+      .left{
+        width: 75px;
+      }
+
+      .text-box{
+        flex: 1;
+        max-width: 200px;
+      }
+
+      .follow-button{
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        background-color: rgb(65, 146, 239);
+        height: 30px;
+        padding-left: 9px;
+        padding-right: 9px;
+      }
+
+      .name{
+        font-weight: bold;
+      }
+
+      .description,.status{
+        color: gray;
+      }
+
+      .status{
+        font-size: 13px;
+      }
+
+
+   </style>
+  </head>
+  <body style="
+    font-family: roboto;
+    margin-bottom: 1500px;
+  ">
+    <div class="general">
+      <div class="home">
+        <p>Home</p>
+        <button class="button">14</button>
+      </div>
+
+      <div class="notifications">
+        <p>Notifications</p>
+        <button class="button">3</button>
+      </div>
+
+      <div class="messages">
+        <p>Messages</p>
+        <button class="button">5</button>
+      </div>
+    </div>
+
+
+
+    <div class="header">
+      <div class="left-section">
+        <p class="home-tab">Home</p>
+      </div>
+
+      <input class="search-bar" type="text" placeholder="Search">
+
+      <button class="download">Download</button>
+
+    </div>
+
+
+
+
+    <div class="follow-box">
+      <div class="section">
+        <div class="left">
+          <img class="profile-pic" src="images/cat1.jpg" alt="">
+        </div>
+        <div class="text-box">
+          <div>
+            <p class="name">Oliver</p>
+          </div>
+          <div>
+            <p class="description">The cat</p>
+          </div>
+          <div class="status">
+            <p>Popular</p>
+          </div>
+        </div>
+        <div class="right">
+          <button class="follow-button">Follow</button>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <div class="left">
+          <img class="profile-pic" src="images/cat2.jpg" alt="">
+        </div>
+        <div class="text-box">
+          <div>
+            <p class="name">Mimi</p>
+          </div>
+          <div>
+            <p class="description">Sleepy cat</p>
+          </div>
+          <div class="status">
+            <p>Popular</p>
+          </div>
+        </div>
+        <div class="right">
+          <button class="follow-button">Follow</button>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <div class="left">
+          <img class="profile-pic" src="images/cat3.jpg" alt="">
+        </div>
+        <div class="text-box">
+          <div>
+            <p class="name">Rex</p>
+          </div>
+          <div>
+            <p class="description">Happy Cat</p>
+          </div>
+          <div class="status">
+            <p>Popular</p>
+          </div>
+        </div>
+        <div class="right">
+          <button class="follow-button">Follow</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

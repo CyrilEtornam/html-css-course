@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+                font-family: arial;
+            }
+            .feedback{
+                display: block;
+                border-color: gray;
+                width: 210px;
+                border: 1px solid gray;
+                border-width: 2px;
+            }
+
+            .YT-music{
+                background-color: rgb(32, 32, 32);
+                display: block;
+                width: 370px;
+                height: 100px;
+                padding-left: 20px;
+                margin-bottom: 100px;
+            }
+
+            .header{
+                padding-top: 10px;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .description{
+                color: rgb(130, 130, 130);
+            }
+
+            .profile-image{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 60px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+
+            .tweet-button{
+                background-color: rgb(43, 99, 187);
+                color: white;
+                font-size: 15px;
+                font-weight: lighter;
+                text-align: center;
+                border: none;
+                border-radius: 75px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-top: 18px;
+                margin-bottom: 80px;
+                margin-left: 110px;
+                cursor: pointer;
+            }
+
+            .tweet-box{
+                border: 1px solid grey;
+                height: 70px;
+                width: 400px;
+                border-radius: 7px;
+                box-shadow: -4px -4px 4px rgba(0,0,0, .25), 4px 4px 4px rgba(0,0,0, .25);
+                margin-bottom: 100px;
+            }
+
+            .placeholder{
+                display: inline-block;
+                color: gray;            
+            }
+
+            .friend-request{
+                width: 150px;
+                border: 1px solid rgb(151, 151, 151);
+                display: inline-block;
+                margin-left: 12px;
+                /* box-shadow: 4px 4px 4px rgba(0,0,0, .25), -4px -4px -4px rgba(0,0,0, .25); */
+                box-shadow: 4px 4px 4px rgba(0,0,0, .15), -4px -4px 4px rgba(0,0,0, .15);
+                margin-bottom: 100px;
+            }
+
+            .name{
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 0px;
+                margin-top: 5px;
+                margin-left: 7px;
+            }
+
+            .mutual-friends{
+                margin-top: 3px;
+                margin-bottom: 8px;
+                margin-left: 7px;
+                color: rgb(151, 151, 151);
+            }
+
+            .profile-pic{
+                width: 150px;
+                height: 160px;
+                object-fit: cover;
+
+            }
+
+            .add-friend{
+                background-color: rgb(43, 99, 187);
+                color: white;
+                width: 105px;
+                height: 38px;
+                font-size: 15px;
+                font-weight: lighter;
+                text-align: center;
+                border: none;
+                border-radius: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                cursor: pointer;
+                margin-bottom: 7px;
+                margin-left: 7px;
+            }
+
+            .add-friend:active{
+                background-color: rgb(10, 62, 160);
+            }
+
+            .google-logo{
+                width: 250px;
+            }
+
+            .search-bar{
+                width: 350px;
+                height: 30px;
+                border-radius: 20px;
+                border: 1px solid gray;
+                box-shadow: 2px 2px 2px rgba(0,0,0, .15), -2px -2px 2px rgba(0,0,0, .15);
+                margin-bottom: 30px;
+            }
+
+            .search-button{
+                border:none;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-left: 10px;
+                padding-right: 10px;
+                cursor: pointer;
+
+            }
+
+            .align{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="feedback">
+            <p>Satistied with our service?</p>
+            <button>Yes</button>
+            <button>No</button>
+        </div>
+
+        <div class="YT-music">
+            <p class="header">
+                Install YouTube Music
+            </p>
+            <p class="description">
+            Add YouTube Music to your desktop 
+            for quick and easy access
+            </p>
+        </div>
+
+        <div class="tweet-box">
+            <img class="profile-image" src="images/cat1.jpg" alt="">
+
+            <p class="placeholder">What's happening?</p>
+
+            <button class="tweet-button">Tweet</button>
+        </div>
+
+
+        <div class="friend-request">
+            <img class="profile-pic" src="images/cat1.jpg" alt="">
+            <p class="name">
+                Cyril
+            </p>
+
+            <p class="mutual-friends">
+                2 mutual friends
+            </p>
+
+            <button class="add-friend">Add Friend</button>
+        </div>
+
+
+        <div class="friend-request">
+            <img class="profile-pic" src="images/cat2.jpg" alt="">
+            <p class="name">
+                Etornam
+            </p>
+
+            <p class="mutual-friends">
+                3 mutual friends
+            </p>
+
+            <button class="add-friend">Add Friend</button>
+        </div>
+
+
+        <div class="friend-request">
+            <img class="profile-pic" src="images/cat3.jpg" alt="">
+            <p class="name">
+                Shampoo
+            </p>
+
+            <p class="mutual-friends">
+                4 mutual friends
+            </p>
+
+            <button class="add-friend">Add Friend</button>
+        </div>
+
+        <div class="align">
+            <img class="google-logo" src="google.png" alt="">
+        </div>
+
+        <div class="align">
+            <input class="search-bar" type="text" placeholder="Search Google or type a URL">
+        </div>
+
+        <div class="align">
+            <button class="search-button">Google Search</button>
+            <button class="search-button">I'm Feeling Lucky</button>
+        </div>
+    </body>
+</html>s

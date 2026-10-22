@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nested Flexbox</title>
+
+    <style>
+      .l13b{
+        display: flex;
+        height: 50px;
+      }
+
+      .pink{
+        background-color: lightpink;
+        width: 100px;
+      }
+
+      .blue{
+        background-color: lightblue;
+        width: 200px;
+      }
+
+      .black{
+        background-color: black;
+        color: white;
+      }
+
+      .nest{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;      }
+    </style>
+  </head>
+  <body>
+    <div class="l13b">
+      <div class="pink"></div>
+      <div class="blue">
+        <div>row1</div>
+        <div class="nest">
+          <div class="black">row2</div>
+          <div class="black">row2</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

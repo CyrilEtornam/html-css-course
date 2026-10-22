@@ -1,0 +1,30 @@
+.field1, 
+.field2{
+    display: block;
+    margin-bottom: 5px;
+    border-color: gray;
+
+}
+
+.survey{
+    width: 200px;
+    display: inline-block;
+}
+
+.button1, .button2{
+        vertical-align: 18px;
+}
+
+
+.google-image{
+    width: 100px;
+    align-self: center;
+    margin-left: 40px;
+}
+
+.search-bar{
+    display: block;
+    width: 230px;
+    border-radius: 120px;
+    box-shadow: 3px 3px 3cap rgba(0,0,0,.15);
+}
